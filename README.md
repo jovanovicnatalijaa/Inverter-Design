@@ -13,7 +13,7 @@ Sinusoidal PWM with a carrier frequency of 30kHz.
 ### Dead-Time Implementation
 A robust safety interval was integrated directly into the MATLAB control function to prevent shoot-through currents in the H-bridge legs.
 ### Filter Design
-A high-order LC low-pass filter ($L=20\text{ mH}$, $C=100\text{ }\mu\text{F}$) was designed and tuned to suppress switching noise and low-order harmonics.
+A high-order LC low-pass filter L=20mH, C=100uF was designed and tuned to suppress switching noise and low-order harmonics.
 ### Harmonic Performance
 Achieved a THD (Total Harmonic Distortion) of 2.57%, significantly surpassing the standard 5% requirement. 
 [FFT Spectrum](image/fft_invertor_simulation.png)
