@@ -8,7 +8,7 @@ This project focuses on the design, simulation, and harmonic optimization of a s
 ## Key Technical Features
 
 ### Control Strategy
-Sinusoidal PWM with a carrier frequency of $30\text{ kHz}$.
+Sinusoidal PWM with a carrier frequency of 30kHz.
 [Output Sine Wave](image/v_out_signal_invertor.png)
 ### Dead-Time Implementation
 A robust safety interval was integrated directly into the MATLAB control function to prevent shoot-through currents in the H-bridge legs.
@@ -25,8 +25,8 @@ Load: Resistive load with output filtering.
 
 ## How to Run
 Clone the repository:
-git clone https://github.com/jovanovicnatalijaa/Inverter-Design
-Open the .slx file in MATLAB/Simulink (R2024 or later recommended).
-Ensure the powergui block is set to Discrete mode.
+git clone https://github.com/jovanovicnatalijaa/Inverter-Design  
+Open the .slx file in MATLAB/Simulink (R2024 or later recommended).  
+Ensure the powergui block is set to Discrete mode.  
 
 Run the simulation and observe the clean sine wave on the output Scope.
