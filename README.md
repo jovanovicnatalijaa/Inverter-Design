@@ -3,16 +3,20 @@
 
 This project focuses on the design, simulation, and harmonic optimization of a single-phase H-bridge power inverter. The system is implemented in MATLAB/Simulink using a custom SPWM (Sinusoidal Pulse Width Modulation) control algorithm. The primary goal was to achieve a high-quality output voltage waveform that meets international standards for grid connection.
 
+![Simulink Schematic](images/schematic_invertor.png)
+
 ## Key Technical Features
 
 ### Control Strategy
 Sinusoidal PWM with a carrier frequency of $30\text{ kHz}$.
+![Output Sine Wave](images/v_out_signal_invertor.png)
 ### Dead-Time Implementation
 A robust safety interval was integrated directly into the MATLAB control function to prevent shoot-through currents in the H-bridge legs.
 ### Filter Design
 A high-order LC low-pass filter ($L=20\text{ mH}$, $C=100\text{ }\mu\text{F}$) was designed and tuned to suppress switching noise and low-order harmonics.
 ### Harmonic Performance
-Achieved a THD (Total Harmonic Distortion) of 2.57%, significantly surpassing the standard 5% requirement.
+Achieved a THD (Total Harmonic Distortion) of 2.57%, significantly surpassing the standard 5% requirement. 
+![FFT Spectrum](images/fft_invertor_simulation.png)
 
 ## System Components
 Power Stage: MOSFET-based H-bridge inverter.  
